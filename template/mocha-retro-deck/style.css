@@ -1,0 +1,28 @@
+:root {
+  --slidev-theme-background: #1e130c;
+  --slidev-theme-color: #f2e3b6;
+}
+
+h1, h2, h3, p {
+  color: #f2e3b6;
+}
+
+.bg-orange-custom { background-color: #d6643c; }
+.bg-green-custom { background-color: #7ab89e; }
+.bg-yellow-custom { background-color: #f2e3b6; color: #1e130c; }
+.text-orange-custom { color: #d6643c; }
+.text-green-custom { color: #7ab89e; }
+
+.bg-orange-custom p,
+.bg-green-custom p,
+.bg-yellow-custom p {
+  color: #1e130c;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 0.6rem;
+  color: rgba(242, 227, 182, 0.6);
+}
