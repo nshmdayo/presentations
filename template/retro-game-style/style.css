@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+  --retro-blue: #325e89;
+  --retro-dark: #1b2d42;
+  --retro-red: #e04b4b;
+  --retro-green: #85c87a;
+  --retro-light: #d6e5ec;
+  --retro-bg-dark: #81a4c7;
+  --retro-bg-light: #cddbe5;
+}
+
+/* スライド全体の背景（市松模様） */
+#slidev-app .slidev-layout {
+  background-color: var(--retro-bg-light);
+  background-image: 
+    linear-gradient(45deg, var(--retro-bg-dark) 25%, transparent 25%, transparent 75%, var(--retro-bg-dark) 75%, var(--retro-bg-dark)), 
+    linear-gradient(45deg, var(--retro-bg-dark) 25%, transparent 25%, transparent 75%, var(--retro-bg-dark) 75%, var(--retro-bg-dark));
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  font-family: 'VT323', monospace;
+  padding: 1.5rem;
+}
+
+/* 中央の青いカード */
+.retro-card {
+  background-color: var(--retro-blue);
+  border: 6px solid var(--retro-dark);
+  border-radius: 16px;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* タイトルテキスト (赤色＋縁取り) */
+.retro-title {
+  font-family: 'Press Start 2P', cursive;
+  color: var(--retro-red);
+  -webkit-text-stroke: 2px var(--retro-dark);
+  text-shadow: 3px 3px 0 var(--retro-dark);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* 緑色のサブ見出し */
+.retro-heading-green {
+  font-family: 'VT323', monospace;
+  color: var(--retro-green);
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 0px var(--retro-dark);
+}
+
+/* 小さなラベル（Pill） */
+.retro-pill {
+  background-color: var(--retro-blue);
+  border: 3px solid var(--retro-dark);
+  border-radius: 20px;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+/* ボタン風デザイン */
+.retro-btn {
+  background-color: var(--retro-red);
+  border: 3px solid var(--retro-dark);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-top: auto; /* 下部に押しやる */
+}
